@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александра Быстрова](https://up.htmlacademy.ru/adaptive/23/user/1627981).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
