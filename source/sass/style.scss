@@ -1,1 +1,66 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/heading-primary.scss";
+@import "blocks/button.scss";
+@import "blocks/page-main.scss";
+@import "blocks/goal.scss";
+@import "blocks/process.scss";
+@import "blocks/example.scss";
+@import "blocks/slider-range.scss";
+@import "blocks/contacts.scss";
+@import "blocks/socials-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/page-catalog.scss";
+@import "blocks/products-optional.scss";
+@import "blocks/bonus.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-form.scss";
+@import "blocks/form.scss";
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+  url("../fonts/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium;
+}
+
+body {
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-text;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center-container {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+

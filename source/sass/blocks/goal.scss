@@ -1,0 +1,28 @@
+.goal {
+  &__title {
+    font-family: $Oswald;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $basic-black;
+    font-weight: normal;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    background-color: $basic-light;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+
+  &__catalog-link {
+    font-family: $Oswald;
+    text-transform: uppercase;
+    color: $basic-black;
+  }
+}

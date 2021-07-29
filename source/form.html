@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,17 +15,19 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="main-nav__item"><a>Подбор программы</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="page-form">
-    <h1 class="page-form__title heading-primary">Подбор программы</h1>
-    <p class="page-form__text">Заполните анкету, и мы подберем
-      программу питания для вашего кота</p>
+    <div class=" center-container">
+      <h1 class="page-form__title heading-primary">Подбор программы</h1>
+      <p class="page-form__text">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+    </div>
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="form__fieldset">
         <legend class="visually-hidden">Информация о питомце</legend>
@@ -47,15 +50,18 @@
         <legend class="visually-hidden">Цель</legend>
         <ul class="form__list">
           <li class="form__radio radio">
-            <input class="radio__input visually-hidden" type="radio" name="body-goal" id="weight-loss" value="weight-loss" checked>
+            <input class="radio__input visually-hidden" type="radio" name="body-goal" id="weight-loss"
+              value="weight-loss" checked>
             <label class="form__label radio__label" for="weight-loss">Похудение</label>
           </li>
           <li class="form__radio radio">
-            <input class="radio__input visually-hidden" type="radio" name="body-goal" id="weight-gain" value="weight-gain">
+            <input class="radio__input visually-hidden" type="radio" name="body-goal" id="weight-gain"
+              value="weight-gain">
             <label class="form__label radio__label" for="weight-gain">Набор массы</label>
           </li>
           <li class="form__radio radio">
-            <input class="radio__input visually-hidden" type="radio" name="body-goal" id="need-advice" value="need-advice">
+            <input class="radio__input visually-hidden" type="radio" name="body-goal" id="need-advice"
+              value="need-advice">
             <label class="form__label radio__label" for="need-advice">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
@@ -65,23 +71,27 @@
         <ul class="form__user-contacts-list">
           <li class="form__user-contacts-item">
             <label class="form__label" for="user-email">E-mail:*</label>
-            <input class="form__input" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com" required>
+            <input class="form__input" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com"
+              required>
           </li>
           <li class="form__user-contacts-item">
             <label class="form__label" for="user-phone">Телефон:*</label>
-            <input class="form__input" type="tel" name="user-phone" id="user-phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input" type="tel" name="user-phone" id="user-phone" placeholder="8 (960) 900-60-90"
+              required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Комментарий</legend>
-        <textarea class="form__user-comment" name="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__user-comment" name="user-comment"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Дополнительно</legend>
         <ul class="form__list">
           <li class="form__checkbox checkbox">
-            <input class="checkbox__input visually-hidden" type="checkbox" name="options" id="sweetener" value="sweetener" checked>
+            <input class="checkbox__input visually-hidden" type="checkbox" name="options" id="sweetener"
+              value="sweetener" checked>
             <label class="form__label checkbox__label" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="form__checkbox checkbox">
@@ -93,21 +103,24 @@
             <label class="form__label checkbox__label" for="milk">Молоко</label>
           </li>
           <li class="form__checkbox checkbox">
-            <input class="checkbox__input visually-hidden" type="checkbox" name="options" id="vitamins" value="vitamins">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="options" id="vitamins"
+              value="vitamins">
             <label class="form__label checkbox__label" for="vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
-      <button class="form__send-button" type="submit">Отправить заявку</button>
+      <button class="form__send-button button" type="submit">Отправить заявку</button>
       <small>* — Обязательные поля</small>
     </form>
-    <section class="contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__address">
-        ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </address>
+    <section class="contacts contacts--background">
+      <div class="center-container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </address>
+      </div>
       <img class="contacts__location" src="img/location.png" width="320" height="362" alt="Расположение на карте">
     </section>
   </main>
@@ -123,7 +136,8 @@
     </ul>
     <a class="page-footer__copyright copyright" href="#">
       <p class="copyright__text">HTML Academy</p>
-      <img class="copyright__img" src="img/logo/logo-html-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
+      <img class="copyright__img" src="img/logo/logo-html-academy.svg" width="27" height="34"
+        alt="Логотип HTML Academy">
     </a>
   </footer>
 </body>
