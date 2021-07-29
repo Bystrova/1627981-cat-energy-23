@@ -23,8 +23,8 @@
 @font-face {
   font-family: "Oswald";
   src: local("Oswald"),
-  url("../fonts/oswaldregular.woff2") format("woff2"),
-  url("../fonts/oswaldregular.woff") format("woff");
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: regular;
 }
@@ -63,4 +63,3 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
-
