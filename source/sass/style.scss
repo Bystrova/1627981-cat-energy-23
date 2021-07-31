@@ -1,4 +1,6 @@
 @import "variables.scss";
+@import "base.scss";
+@import "fonts.scss";
 @import "blocks/bonus.scss";
 @import "blocks/button.scss";
 @import "blocks/contacts.scss";
@@ -17,47 +19,3 @@
 @import "blocks/products.scss";
 @import "blocks/slider-range.scss";
 @import "blocks/socials-list.scss";
-
-@font-face {
-  font-family: "Oswald";
-  src: local("Oswald"),
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: regular;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: local("Oswald"),
-    url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
-  font-style: medium;
-}
-
-body {
-  width: 320px;
-  padding: 0;
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: $basic-text;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.center-container {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-}

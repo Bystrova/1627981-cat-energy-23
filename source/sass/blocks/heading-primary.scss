@@ -1,7 +1,7 @@
 .heading-primary {
   font-family: $Oswald;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 36px;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -10,6 +10,5 @@
   &--m-white {
     color: $basic-white;
     text-align: center;
-    line-height: 36px;
   }
 }

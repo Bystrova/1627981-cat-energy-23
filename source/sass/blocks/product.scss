@@ -1,19 +1,19 @@
 .product {
   border-bottom: 1px solid $special-grey;
   padding-bottom: 25px;
+}
 
-  &__heading-link,
-  &__heading {
-    font-family: $Oswald;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: $basic-black;
-  }
+.product__heading-link,
+.product__heading {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $basic-black;
+}
 
-  &__info {
-    font-size: 12px;
-    line-height: 16px;
-  }
+.product__info {
+  font-size: 12px;
+  line-height: 16px;
 }

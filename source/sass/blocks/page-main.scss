@@ -1,21 +1,19 @@
-.page-main {
-  &__top {
-    background: url("../img/background/can.png") bottom no-repeat,
-      url("../img/background/green-cat.png") no-repeat;
-    padding: 23px 0 29px 0;
-    height: 437px;
-  }
+.page-main__top {
+  background: url("../img/background/can.png") bottom no-repeat,
+    url("../img/background/green-cat.png") no-repeat;
+  padding: 23px 0 29px 0;
+  height: 437px;
+}
 
-  &__slogan {
-    font-family: $Oswald;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-    color: $basic-white;
-    text-align: center;
-  }
+.page-main__slogan {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-align: center;
+}
 
-  &__choose-program {
-    margin-bottom: 20px;
-  }
+.page-main__choose-program {
+  margin-bottom: 20px;
 }
