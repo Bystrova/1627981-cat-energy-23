@@ -9,6 +9,14 @@
   line-height: 18px;
 }
 
+.form__input,
+.form__user-comment {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .form__animal-data-list,
 .form__user-contacts-list {
   color: $basic-dark-grey;
