@@ -1,0 +1,20 @@
+.contacts {
+  &--background {
+    background-color: $basic-light;
+  }
+}
+
+.contacts__title {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-black;
+  font-weight: normal;
+}
+
+.contacts__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}

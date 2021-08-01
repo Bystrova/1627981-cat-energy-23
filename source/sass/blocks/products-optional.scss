@@ -1,0 +1,36 @@
+.products-optional {
+  padding-top: 25px;
+}
+
+.products-optional__title {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $basic-black;
+}
+
+.products-optional__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products-optional__item {
+  padding-bottom: 19px;
+  border-bottom: 1px solid $special-grey-2;
+}
+
+.products-optional__item:first-child {
+  margin-top: 36px;
+  border-top: 1px solid $special-grey-2;
+}
+
+.products-optional__heading {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  font-weight: normal;
+}

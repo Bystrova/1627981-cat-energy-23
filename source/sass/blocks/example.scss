@@ -1,0 +1,40 @@
+.example {
+  background-color: $basic-light-grey;
+  padding-top: 27px;
+  padding-bottom: 31px;
+}
+
+.example__stats-list {
+  list-style: none;
+  margin: 0 0 42px 0;
+  padding: 0;
+}
+
+.example__result {
+  font-family: $Oswald;
+  color: $basic-black;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__description {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.example__description--cost,
+.example__result--cost {
+  font-family: $Oswald;
+  color: $basic-black;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

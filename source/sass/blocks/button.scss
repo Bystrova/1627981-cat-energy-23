@@ -1,0 +1,22 @@
+.button {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  color: $basic-white;
+  width: 280px;
+  padding: 7px 0;
+  text-align: center;
+  display: inline-block;
+
+  &--show-all {
+    background-color: $basic-light;
+    color: $basic-dark-grey;
+  }
+
+  &--main {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

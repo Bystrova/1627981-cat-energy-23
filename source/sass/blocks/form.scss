@@ -1,0 +1,59 @@
+.form__fieldset {
+  border: none;
+  text-transform: uppercase;
+}
+
+.form-font {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__input,
+.form__user-comment {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__animal-data-list,
+.form__user-contacts-list {
+  color: $basic-dark-grey;
+}
+
+.radio {
+  color: $special-dark-grey;
+}
+
+.checkbox {
+  color: $basic-black;
+}
+
+.form__input::placeholder,
+.form__user-comment::placeholder {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey;
+  opacity: 1;
+}
+
+.form__legend {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: $basic-black;
+}
+
+.form__animal-data-list,
+.form__list,
+.form__user-contacts-list {
+  list-style: none;
+}
+
+.form__send-button {
+  border: none;
+}
