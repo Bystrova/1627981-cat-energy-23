@@ -31,27 +31,28 @@
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="form__fieldset">
         <legend class="visually-hidden">Информация о питомце</legend>
-        <ul class="form__animal-data-list">
+        <ul class="form__animal-data-list form-font">
           <li class="form__animal-data-item">
             <label class="form__label" for="animal-name">Имя:*</label>
-            <input class="form__input placeholder" type="text" name="animal-name" id="animal-name" placeholder="Барсик"
+            <input class="form__input" type="text" name="animal-name" id="animal-name"
+              placeholder="Барсик"
               required>
           </li>
           <li class="form__animal-data-item">
             <label class="form__label" for="animal-weight">Вес (кг):*</label>
-            <input class="form__input placeholder" type="number" name="animal-weight" id="animal-weight" placeholder="7"
+            <input class="form__input" type="number" name="animal-weight" id="animal-weight" placeholder="7"
               required>
           </li>
           <li class="form__animal-data-item">
             <label class="form__label" for="animal-age">Возраст (лет):*</label>
-            <input class="form__input placeholder" type="number" name="animal-age" id="animal-age" placeholder="7"
+            <input class="form__input" type="number" name="animal-age" id="animal-age" placeholder="7"
               required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="visually-hidden">Цель</legend>
-        <ul class="form__list">
+        <ul class="form__list form-font">
           <li class="form__radio radio">
             <input class="radio__input visually-hidden" type="radio" name="body-goal" id="weight-loss"
               value="weight-loss" checked>
@@ -71,15 +72,15 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
-        <ul class="form__user-contacts-list">
+        <ul class="form__user-contacts-list form-font">
           <li class="form__user-contacts-item">
             <label class="form__label" for="user-email">E-mail:*</label>
-            <input class="form__input placeholder" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com"
+            <input class="form__input" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com"
               required>
           </li>
           <li class="form__user-contacts-item">
             <label class="form__label" for="user-phone">Телефон:*</label>
-            <input class="form__input placeholder" type="tel" name="user-phone" id="user-phone"
+            <input class="form__input" type="tel" name="user-phone" id="user-phone"
               placeholder="8 (960) 900-60-90"
               required>
           </li>
@@ -88,12 +89,12 @@
       <fieldset class="form__fieldset">
         <legend class="form__legend">Комментарий</legend>
         <label class="visually-hidden" for="comment">Напишите комментарий</label>
-        <textarea class="form__user-comment placeholder" name="user-comment" id="comment"
+        <textarea class="form__user-comment" name="user-comment" id="comment"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Дополнительно</legend>
-        <ul class="form__list">
+        <ul class="form__list form-font">
           <li class="form__checkbox checkbox">
             <input class="checkbox__input visually-hidden" type="checkbox" name="options" id="sweetener"
               value="sweetener" checked>

@@ -1,9 +1,35 @@
 .form__fieldset {
+  border: none;
+  text-transform: uppercase;
+}
+
+.form-font {
   font-family: $Oswald;
   font-size: 16px;
   line-height: 18px;
-  border: none;
+}
+
+.form__animal-data-list,
+.form__user-contacts-list {
+  color: $basic-dark-grey;
+}
+
+.radio {
+  color: $special-dark-grey;
+}
+
+.checkbox {
+  color: $basic-black;
+}
+
+.form__input::placeholder,
+.form__user-comment::placeholder {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+  color: $basic-dark-grey;
+  opacity: 1;
 }
 
 .form__legend {
