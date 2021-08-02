@@ -2,4 +2,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    column-gap: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px;
+    gap: 100px;
+  }
+}
+
+.process__item {
+  @media (min-width: $tablet-width) {
+    height: 280px;
+  }
 }

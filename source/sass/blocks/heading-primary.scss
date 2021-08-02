@@ -7,8 +7,10 @@
   font-weight: 400;
   color: $basic-black;
 
-  &--m-white {
-    color: $basic-white;
-    text-align: center;
+  @media (max-width: $mobile-width-only) {
+    &--m-white {
+      color: $basic-white;
+      text-align: center;
+    }
   }
 }

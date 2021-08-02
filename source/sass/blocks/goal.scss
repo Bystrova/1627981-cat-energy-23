@@ -11,12 +11,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .goal__item {
   background-color: $basic-light;
   padding: 30px 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
+    padding: 77px 51px 55px 52px;
+  }
 }
 
 .goal__catalog-link {

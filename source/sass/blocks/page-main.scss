@@ -1,8 +1,12 @@
 .page-main__top {
   background: url("../img/background/can.png") bottom no-repeat,
     url("../img/background/green-cat.png") no-repeat;
-  padding: 23px 0 29px 0;
-  height: 437px;
+  padding: 23px 0 0 0;
+  height: 453px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/background/can.png") bottom no-repeat;
+  }
 }
 
 .page-main__slogan {
@@ -12,6 +16,13 @@
   text-transform: uppercase;
   color: $basic-white;
   text-align: center;
+  margin-bottom: 320px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    color: $basic-black;
+    text-align: left;
+  }
 }
 
 .page-main__choose-program {
