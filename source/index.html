@@ -9,29 +9,30 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header center-container">
-    <a class="logo-pic">
-      <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="center-container">
+      <div class="page-header__wrap">
+        <a class="logo-pic">
+          <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__bottom">
+        <h1 class="page-header__title heading-primary heading-primary--m-white"> Функциональное питание для котов </h1>
+        <p class="page-header__slogan"> Занялся собой? Займись котом! </p>
+        <a class="page-header__choose-program button button--main" href="form.html">Подобрать программу</a>
+      </div>
+    </div>
   </header>
 
   <main class="page-main">
-    <div class="page-main__top">
-      <div class="center-container">
-        <h1 class="page-main__title heading-primary heading-primary--m-white"> Функциональное питание для котов </h1>
-        <p class="page-main__slogan"> Занялся собой? Займись котом! </p>
-        <a class="page-main__choose-program button button--main" href="form.html">Подобрать программу</a>
-      </div>
-    </div>
-    </section>
     <section class="goal center-container">
       <ul class="goal__list ">
         <li class="goal__item">
@@ -84,11 +85,9 @@
     </section>
     <section class="example">
       <div class="center-container">
-        <h2 class="example__title heading-primary">Живой пример</h2>
-      </div>
-      <div class="example__background-container">
-        <div class="example__info center-container">
-          <div>
+        <div class="wrapper">
+          <div class="example__wrap">
+            <h2 class="example__title heading-primary">Живой пример</h2>
             <p class="example__text">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
               без
@@ -128,13 +127,15 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrap center-container">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
-        </address>
+      <div class="center-container center-container--relative">
+        <div class="contacts__wrap ">
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <address class="contacts__address">
+            ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
       </div>
       <img class="contacts__location" src="img/location.png" width="320" height="362" alt="Расположение на карте">
     </section>

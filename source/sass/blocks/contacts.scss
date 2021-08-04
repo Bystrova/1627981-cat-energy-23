@@ -2,22 +2,22 @@
   &--background {
     background-color: $basic-light;
   }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
 }
 
 .contacts__wrap {
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    padding: 62px 41px 58px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 405px;
     background-color: $basic-white;
     top: 95px;
-    left: 110px;
+    left: 20px;
     padding: 66px 89px 51px 76px;
   }
 }

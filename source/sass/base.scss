@@ -24,16 +24,26 @@ a {
   text-decoration: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .center-container {
-  width: 280px;
+  width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 728px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1260px;
+
+    &--relative {
+      position: relative;
+    }
   }
 }

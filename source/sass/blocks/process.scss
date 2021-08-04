@@ -5,19 +5,21 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 230px 230px;
-    column-gap: 153px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 230px 230px 230px 230px;
-    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 79px;
   }
 }
 
 .process__item {
   @media (min-width: $tablet-width) {
-    height: 280px;
+    // height: 280px;
+    padding: 151px 0 57px 0;
   }
 }

@@ -24,7 +24,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
-    width: 467px;
+    width: calc(50% - 80px / 2);
     padding: 77px 51px 55px 52px;
   }
 }
