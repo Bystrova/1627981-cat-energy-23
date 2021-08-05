@@ -1,13 +1,35 @@
 .example {
   background-color: $basic-light-grey;
-  padding-top: 27px;
-  padding-bottom: 31px;
+  // padding-top: 27px;
+  // padding-bottom: 31px;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-light-grey;
+    min-height: 656px;
+  }
+}
+
+.wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__stats-list {
   list-style: none;
   margin: 0 0 42px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__result {
@@ -37,4 +59,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.example__range {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: right;
+  }
 }

@@ -1,3 +1,21 @@
 .page-footer {
   background-color: $basic-light;
+  text-align: center;
+}
+
+.page-footer__wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
 }
