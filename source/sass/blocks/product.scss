@@ -1,6 +1,28 @@
 .product {
-  border-bottom: 1px solid $special-grey;
+  // border-bottom: 1px solid $special-grey;
   padding-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      // border: none;
+      background-color: $basic-light;
+    }
+
+    &:last-child {
+      border: 1px solid $special-grey;
+    }
+  }
+}
+
+.product__link {
+  @media (min-width: $tablet-width) {
+    min-width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 168px;
+  }
 }
 
 .product__heading-link,
