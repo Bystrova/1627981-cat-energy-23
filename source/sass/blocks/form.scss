@@ -1,14 +1,6 @@
 .form {
   padding: 0;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 36px 0 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
 }
 
 .form__wrap {
@@ -31,7 +23,7 @@
   margin: 0;
 }
 
-.fieldset-animal {
+.form__fieldset-animal {
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
@@ -43,7 +35,7 @@
   }
 }
 
-.fieldset-contacts {
+.form__fieldset-contacts {
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -55,7 +47,7 @@
   }
 }
 
-.fieldset-comment {
+.form__fieldset-comment {
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -67,7 +59,7 @@
   }
 }
 
-.fieldset-options {
+.form__fieldset-options {
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -79,7 +71,7 @@
   }
 }
 
-.form-font {
+.form__font {
   font-family: $Oswald;
   font-size: 16px;
   line-height: 18px;
@@ -114,14 +106,6 @@
   margin: 0;
 }
 
-.radio {
-  color: $special-dark-grey;
-
-  &:not(:last-child) {
-    margin-bottom: 18px;
-  }
-}
-
 .form__input::placeholder,
 .form__user-comment::placeholder {
   font-family: $Oswald;
@@ -140,7 +124,7 @@
   color: $basic-black;
 }
 
-.contacts-title {
+.form__contacts-title {
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -169,7 +153,7 @@
   }
 }
 
-.comment-title {
+.form__comment-title {
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
@@ -181,7 +165,7 @@
   width: 100%;
 }
 
-.options-title {
+.form__options-title {
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -206,10 +190,6 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
   }
-}
-
-.checkbox {
-  color: $basic-black;
 }
 
 .form__send {
