@@ -1,6 +1,38 @@
+.page-form__title {
+  margin: 27px 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 65px 0 54px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 77px 0 56px 0;
+  }
+}
+
+.page-form__wrap {
+  @media (min-width: $tablet-width) {
+    padding-left: 41px;
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .page-form__text {
   font-family: $Oswald;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0 0 39px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 66px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 66px 0;
+  }
 }

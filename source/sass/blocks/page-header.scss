@@ -17,32 +17,6 @@
   }
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.main-nav__item {
-  @media (min-width: $tablet-width) {
-    margin-right: 35px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-.main-nav__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .page-header__bottom {
   background: url("../img/background/can.png") bottom no-repeat,
     url("../img/background/green-cat.png") no-repeat;
