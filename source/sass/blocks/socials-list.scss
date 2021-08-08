@@ -2,4 +2,27 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding: 20px 77px 21px 73px;
+  border-top: 1px solid $special-grey-3;
+  border-bottom: 1px solid $special-grey-3;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.socials-list__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.socials-list__icons:hover path {
+  stroke: $basic-green;
+}
+
+.socials-list__icons:active path {
+  opacity: 0.3;
 }

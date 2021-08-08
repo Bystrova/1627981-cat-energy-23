@@ -19,4 +19,12 @@
     font-size: 14px;
     line-height: 18px;
   }
+
+  &:hover {
+    background-color: $green-button-hover;
+  }
+
+  &:active {
+    color: $opacity-white;
+  }
 }

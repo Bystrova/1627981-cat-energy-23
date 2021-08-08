@@ -1,3 +1,12 @@
+.process__title {
+  margin: 0 0 38px 0;
+  padding: 45px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
 .process__list {
   list-style: none;
   margin: 0;
@@ -18,8 +27,73 @@
 }
 
 .process__item {
+  padding: 0 0 0 80px;
+  position: relative;
+  margin-bottom: 24px;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+
+  &--healthy::before {
+    background: url("../img/icons/leaf.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--easy::before {
+    background: url("../img/icons/tub.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--applying::before {
+    background: url("../img/icons/eat.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--duration::before {
+    background: url("../img/icons/alarm.svg") no-repeat;
+    background-size: contain;
+  }
+
   @media (min-width: $tablet-width) {
-    // height: 280px;
-    padding: 151px 0 57px 0;
+    padding: 151px 78px 57px 0;
+    font-size: 16px;
+    line-height: 24px;
+
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 50px;
+    }
+
+    &--healthy {
+      background: url("../img/icons/one.svg") no-repeat;
+      background-position: 125px 50px;
+    }
+
+    &--easy {
+      background: url("../img/icons/two.svg") no-repeat;
+      background-position: 125px 50px;
+    }
+
+    &--applying {
+      background: url("../img/icons/three.svg") no-repeat;
+      background-position: 125px 50px;
+    }
+
+    &--duration {
+      background: url("../img/icons/four.svg") no-repeat;
+      background-position: 125px 50px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
   }
 }
