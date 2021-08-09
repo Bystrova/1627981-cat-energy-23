@@ -170,6 +170,7 @@
   list-style: none;
   margin: 0 0 23px 0;
   padding: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -181,15 +182,49 @@
 }
 
 .example__slider-item:last-child {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    right: -50px;
+  }
 }
 
 .example__slider-img {
   object-fit: contain;
 
+  &--before {
+    clip-path: inset(0 0 0 0);
+  }
+
+  &--after {
+    clip-path: inset(0 0 0 100%);
+  }
+
   @media (min-width: $tablet-width) {
-    width: 600px;
-    height: 536px;
+    width: 677px;
+    height: 520px;
+
+    &--before {
+      clip-path: inset(0 46% 0 0);
+    }
+
+    &--after {
+      clip-path: inset(0 0 0 46%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--before {
+      clip-path: inset(0 45% 0 0);
+    }
+
+    &--after {
+      clip-path: inset(0 0 0 50%);
+      height: 470px;
+    }
   }
 }
 

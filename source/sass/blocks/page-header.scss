@@ -1,7 +1,8 @@
 .page-header {
   @media (min-width: $desktop-width) {
-    background: url("../img/background/green-cat-desktop.png") right no-repeat,
-      linear-gradient(to left, $basic-dark-green 50%, $basic-white 50%);
+    background: linear-gradient(to left, transparent 50%, $basic-white 50%),
+      url("../img/background/green-cat-desktop.png") right no-repeat,
+      linear-gradient(to left, $basic-dark-green 50%, transparent 50%);
     min-height: 694px;
     margin-bottom: 82px;
   }
@@ -47,6 +48,7 @@
 }
 
 .page-header__bottom {
+
   min-height: 480px;
   background: url("../img/background/can.png") center 165px no-repeat,
     url("../img/background/green-cat.png") center top no-repeat,
@@ -58,14 +60,14 @@
   @media (min-width: $tablet-width) {
     background: url("../img/background/can.png") bottom no-repeat;
     text-align: left;
-    padding: 62px 0 0 87px;
+    padding: 62px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../img/background/can.png") bottom no-repeat;
     background-size: contain;
     text-align: left;
-    padding: 111px 0 0 80px;
+    padding: 111px 0 0 0;
   }
 }
 

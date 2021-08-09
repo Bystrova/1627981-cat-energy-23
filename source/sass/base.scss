@@ -31,7 +31,7 @@ a {
 }
 
 .center-container {
-  // max-width: 320px;
+  max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 
@@ -40,15 +40,23 @@ a {
   }
 
   @media (min-width: $tablet-width) {
-    // max-width: 768px;
+    max-width: 768px;
     padding: 0 30px;
+
+    &--header-bottom {
+      padding: 0 0 0 87px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1260px;
+    max-width: 1280px;
 
     &--relative {
       position: relative;
+    }
+
+    &--header-bottom {
+      padding: 0 0 0 80px;
     }
   }
 }
