@@ -1,7 +1,7 @@
 .page-footer {
   background-color: $basic-light;
   text-align: center;
-  padding-top: 39px;
+  // padding-top: 39px;
 }
 
 .page-footer__wrap {
@@ -11,6 +11,12 @@
   }
 }
 
-.logo-text {
+.page-footer__logo-text {
+  margin-top: 39px;
   margin-bottom: 32px;
+  display: block;
+}
+
+.page-footer__list {
+  margin: 0;
 }

@@ -1,3 +1,10 @@
+.process {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-border-grey;
+    padding-bottom: 47px;
+  }
+}
+
 .process__title {
   margin: 0 0 38px 0;
   padding: 45px 0 0 0;
