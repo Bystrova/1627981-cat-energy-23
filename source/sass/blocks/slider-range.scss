@@ -1,5 +1,129 @@
+.slider-range {
+  text-align: center;
+  position: relative;
+}
+
+.slider-range__wrap {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -40px;
+    left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -300px;
+    left: 37px;
+    width: 100%;
+  }
+}
+
 .slider-range__ending {
   font-family: $Oswald;
   text-transform: uppercase;
   color: $basic-black;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $special-grey-2;
+  }
+}
+
+.slider-range__control {
+  width: 72px;
+  height: 6px;
+  appearance: none;
+  outline: none;
+  overflow: hidden;
+  border: 4px solid $basic-white;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px $special-grey-4;
+  box-sizing: content-box;
+
+  &::-webkit-slider-runnable-track {
+    height: 6px;
+    background-color: $basic-white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  &::-webkit-slider-thumb {
+    background: $basic-green;
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+    appearance: none;
+    border-radius: 50%;
+    box-shadow: -103px 0 0 100px $basic-green;
+  }
+
+  &::-moz-range-track {
+    height: 6px;
+    background-color: $basic-white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  &::-moz-range-thumb {
+    background: $basic-green;
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+    border: none;
+    box-shadow: -103px 0 0 100px $basic-green;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    appearance: none;
+    background-color: inherit;
+    border: none;
+    overflow: visible;
+    margin: 0 20px;
+
+    &::-webkit-slider-runnable-track {
+      height: 6px;
+      background-color: $special-grey-4;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    &::-webkit-slider-thumb {
+      box-sizing: content-box;
+      background: $basic-green;
+      cursor: pointer;
+      width: 8px;
+      height: 8px;
+      appearance: none;
+      border-radius: 50%;
+      border: 13px solid $basic-white;
+      box-shadow: 0 3px 3px 0 $special-grey-4,
+        0 0 0 1px $special-grey-4;
+      margin-top: -13px;
+    }
+
+    &::-moz-range-track {
+      height: 6px;
+      background-color: $special-grey-4;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+
+    &::-moz-range-thumb {
+      box-sizing: content-box;
+      background: $basic-green;
+      cursor: pointer;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 13px solid $basic-white;
+      box-shadow: 0 3px 3px 0 $special-grey-4,
+        0 0 0 1px $special-grey-4;
+      margin-top: -13px;
+    }
+  }
 }

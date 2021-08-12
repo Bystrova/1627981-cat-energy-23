@@ -3,6 +3,10 @@
     border-bottom: 1px solid $special-border-grey;
     padding-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .process__title {
