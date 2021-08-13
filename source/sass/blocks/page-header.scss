@@ -1,7 +1,20 @@
 .page-header {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to left, transparent 50%, $basic-white 50%),
+      url("../img/background/green-cat-desktop.png") right no-repeat,
+      linear-gradient(to left, $basic-dark-green 50%, transparent 50%);
+    min-height: 694px;
+    margin-bottom: 82px;
+  }
+}
+
+.page-header__wrap {
+  position: relative;
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
     padding-top: 24px;
   }
 
@@ -10,21 +23,9 @@
   }
 }
 
-.page-header__wrap {
+.page-header__title {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.page-header__bottom {
-  background: url("../img/background/can.png") bottom no-repeat,
-    url("../img/background/green-cat.png") no-repeat;
-  padding: 23px 0 0 0;
-  height: 453px;
-
-  @media (min-width: $tablet-width) {
-    background: url("../img/background/can.png") bottom no-repeat;
+    margin-bottom: 41px;
   }
 }
 
@@ -38,12 +39,43 @@
   margin-bottom: 320px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 49px;
     color: $basic-black;
     text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.page-header__bottom {
+
+  min-height: 480px;
+  background: url("../img/background/can.png") center 165px no-repeat,
+    url("../img/background/green-cat.png") center top no-repeat,
+    linear-gradient(to bottom, $basic-dark-green 63%, $basic-white 37%);
+  padding: 23px 0 0 0;
+  margin-bottom: 22px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/background/can.png") bottom no-repeat;
+    text-align: left;
+    padding: 62px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/background/can.png") bottom no-repeat;
+    background-size: contain;
+    text-align: left;
+    padding: 111px 0 0 0;
   }
 }
 
 .page-header__choose-program {
-  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    min-width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 0;
+  }
 }

@@ -35,29 +35,41 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 
+  &--header {
+    padding: 0;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 768px;
+    padding: 0 30px;
+
+    &--header-bottom {
+      padding: 0 0 0 87px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1260px;
+    max-width: 1280px;
 
     &--relative {
       position: relative;
     }
+
+    &--header-bottom {
+      padding: 0 0 0 80px;
+    }
   }
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
-//   white-space: nowrap;
-//   -webkit-clip-path: inset(100%);
-//   clip-path: inset(100%);
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

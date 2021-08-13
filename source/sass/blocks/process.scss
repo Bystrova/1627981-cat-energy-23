@@ -1,7 +1,28 @@
+.process {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-border-grey;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.process__title {
+  margin: 0 0 38px 0;
+  padding: 45px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
 .process__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  counter-reset: item;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -18,8 +39,67 @@
 }
 
 .process__item {
+  padding: 0 0 0 80px;
+  position: relative;
+  margin-bottom: 24px;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+
+  &--healthy::before {
+    background: url("../img/icons/leaf.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--easy::before {
+    background: url("../img/icons/tub.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--applying::before {
+    background: url("../img/icons/eat.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--duration::before {
+    background: url("../img/icons/alarm.svg") no-repeat;
+    background-size: contain;
+  }
+
   @media (min-width: $tablet-width) {
-    // height: 280px;
-    padding: 151px 0 57px 0;
+    padding: 151px 78px 57px 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 50px;
+    }
+
+    &::after {
+      counter-increment: item;
+      content: counter(item);
+      width: 134px;
+      height: 280px;
+      position: absolute;
+      top: 10px;
+      right: 70px;
+      font-family: $Oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-light;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
