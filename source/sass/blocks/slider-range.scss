@@ -1,19 +1,16 @@
 .slider-range {
   text-align: center;
-  position: relative;
-}
+  position: absolute;
+  left: 60px;
 
-.slider-range__wrap {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -40px;
+    bottom: 0;
     left: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -300px;
-    left: 37px;
-    width: 100%;
+    right: -34px;
+    bottom: 81px;
   }
 }
 

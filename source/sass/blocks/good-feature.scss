@@ -1,0 +1,25 @@
+.good-feature {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    border-collapse: collapse;
+  }
+}
+
+.good-feature__data {
+  &:first-child {
+    text-align: left;
+  }
+
+  &:nth-child(2) {
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey-2;
+    padding: 9px 0 7px;
+  }
+}

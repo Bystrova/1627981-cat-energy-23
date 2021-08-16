@@ -1,5 +1,14 @@
+.page-catalog {
+  border-top: 1px solid $special-grey-3;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .page-catalog__title {
-  margin: 27px 0 49px 0;
+  margin: 27px 0 41px 0;
+
 
   @media (min-width: $tablet-width) {
     margin: 65px 0 82px 0;

@@ -1,6 +1,20 @@
 .bonus {
-  background: url("../img/background/green-bag-cat.png") /*no-repeat*/;
-  height: 289px;
+  background: url("../img/icons/icon-gift.svg") center 59px no-repeat,
+    url("../img/background/green-bag-cat.png") no-repeat,
+    $basic-green;
+  padding: 187px 61px 43px 58px;
+
+  @media (min-width: $tablet-width) {
+    background-size: auto, cover;
+    padding: 71px 124px 69px 422px;
+    background-position: 77px 70px, 0 -330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 184px 43px 42px 41px;
+    background-position: center 59px, 0 0;
+    width: 20%;
+  }
 }
 
 .bonus__text {
@@ -8,4 +22,13 @@
   line-height: 20px;
   text-align: center;
   color: $basic-white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

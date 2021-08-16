@@ -1,3 +1,11 @@
+.page-form {
+  border-top: 1px solid $special-grey-3;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
 .page-form__title {
   margin: 27px 0 37px 0;
 
@@ -10,29 +18,33 @@
   }
 }
 
-.page-form__wrap {
-  @media (min-width: $tablet-width) {
-    padding-left: 41px;
-    padding-right: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
-}
-
 .page-form__text {
   font-family: $Oswald;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   margin: 0 0 39px 0;
+  color: $basic-black;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 66px 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 66px 0;
+  }
+}
+
+.page-form__wrap {
+  // padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px 0 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }

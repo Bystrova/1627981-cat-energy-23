@@ -39,12 +39,33 @@ a {
     padding: 0;
   }
 
+  &--tablet-on {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding: 0 30px;
 
     &--header-bottom {
       padding: 0 0 0 87px;
+    }
+
+    &--products-off {
+      max-width: 768px;
+      padding: 0 30px;
+    }
+
+    &--tablet-on {
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+
+    &--tablet-off {
+      padding: 0;
+      margin: 0;
     }
   }
 
@@ -57,6 +78,11 @@ a {
 
     &--header-bottom {
       padding: 0 0 0 80px;
+    }
+
+    &--off {
+      margin: 0;
+      padding: 0;
     }
   }
 }

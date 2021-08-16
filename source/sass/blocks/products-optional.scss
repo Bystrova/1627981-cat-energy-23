@@ -1,6 +1,7 @@
 .products-optional {
   padding-top: 25px;
-  padding-bottom: 35px;
+  border-top: 2px solid $basic-green;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 76px;
@@ -11,14 +12,6 @@
   }
 }
 
-.products-optional__wrap {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
-  }
-}
-
 .products-optional__title {
   font-family: $Oswald;
   font-size: 24px;
@@ -26,13 +19,41 @@
   font-weight: normal;
   color: $basic-black;
   margin-bottom: 36px;
+  position: relative;
+  top: -62px;
+  left: -20px;
+  padding: 0 20px;
+  background-color: $basic-white;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+    top: -80px;
+    left: 0;
+    padding: 0 37px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
+    left: -35px;
+  }
+}
+
+.products-optional__wrap {
+  margin-top: -100px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 69px;
+    margin-top: -120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 73%;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -42,7 +63,8 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/-2;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -51,19 +73,31 @@
   border-bottom: 1px solid $special-grey-2;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 26px 38px 28px;
+    row-gap: 25px;
+    border-left: 1px solid $special-grey-2;
+    border-right: 1px solid $special-grey-2;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 244px;
+    gap: 38px;
+    padding: 10px 0 12px;
+    align-items: center;
+    border-left: none;
+    border-right: none;
   }
 }
 
 .products-optional__item:first-child {
   margin-top: 36px;
   border-top: 1px solid $special-grey-2;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .products-optional__heading {
@@ -73,10 +107,40 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   font-weight: normal;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .products-optional__link {
+  grid-column: 1/-1;
+
   @media (min-width: $desktop-width) {
     align-self: center;
+    grid-column: 3/4;
+    min-width: 244px;
+  }
+}
+
+.products-optional__data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    justify-content: flex-end;
+    gap: 49px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
