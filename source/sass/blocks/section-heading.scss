@@ -1,0 +1,56 @@
+.section-heading {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: $basic-black;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid $basic-green;
+    width: 100vw;
+    top: 15px;
+  }
+
+  &::before {
+    margin-right: 20px;
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
+    margin-left: 20px;
+  }
+
+  &--two-line::before,
+  &--two-line::after {
+    top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      top: 20px;
+      margin-right: 40px;
+    }
+
+    &::after {
+      top: 20px;
+      margin-left: 40px;
+    }
+  }
+}
