@@ -8,12 +8,16 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body>
   <header class="page-header page-header--main">
     <div class="page-header__wrap">
       <div class="center-container center-container--header">
         <a class="logo-pic">
-          <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+          <picture>
+            <source media="(min-width: 1260px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -101,7 +105,7 @@
             <p class="example__text">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
               без
-              изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.
             </p>
             <ul class="example__stats-list">
               <li class="example__stats-item">
@@ -141,7 +145,7 @@
     <section class="contacts">
       <div class="center-container center-container--relative">
         <div class="contacts__wrap ">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="contacts__address">
             ул. Большая
             Конюшенная, д. 19/8

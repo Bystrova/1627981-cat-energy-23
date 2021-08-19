@@ -1,6 +1,6 @@
 .main-nav {
   @media (min-width: $tablet-width) {
-    padding-top: 11px;
+    padding-top: 18px;
   }
 }
 
@@ -38,11 +38,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    margin-right: 25px;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
   }
 }
 
@@ -65,15 +69,20 @@
       width: 100%;
       height: 2px;
       background-color: $basic-green;
-      top: 35px;
+      top: 31px;
       left: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
+    font-weight: 400;
+
+    &--active::after {
+      top: 35px;
+    }
+
     &--white {
       color: $basic-white;
-      font-weight: 400;
     }
 
     &--active-main::after {

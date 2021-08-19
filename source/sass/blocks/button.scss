@@ -6,19 +6,9 @@
   text-transform: uppercase;
   color: $basic-white;
   min-width: 280px;
-  padding: 14px 0;
+  padding: 11px 0;
   text-align: center;
   display: inline-block;
-
-  &--show-all {
-    background-color: $basic-light;
-    color: $basic-dark-grey;
-  }
-
-  &--main {
-    font-size: 14px;
-    line-height: 18px;
-  }
 
   &:hover {
     background-color: $green-button-hover;
@@ -26,5 +16,23 @@
 
   &:active {
     color: $opacity-white;
+  }
+
+  &--show-all {
+    background-color: $basic-light;
+    color: $basic-dark-grey;
+  }
+
+  &--show-all:hover {
+    background-color: $special-grey;
+  }
+
+  &--show-all:active {
+    color: $opacity-grey;
+  }
+
+  &--main {
+    font-size: 14px;
+    line-height: 18px;
   }
 }

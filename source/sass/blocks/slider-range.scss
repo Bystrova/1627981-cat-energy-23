@@ -1,29 +1,41 @@
 .slider-range {
   text-align: center;
   position: absolute;
-  left: 60px;
+  left: 45px;
+  bottom: -46px;
 
   @media (min-width: $tablet-width) {
-    bottom: 0;
+    bottom: 5px;
     left: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    right: -34px;
-    bottom: 81px;
+    right: -14px;
+    bottom: 71px;
   }
 }
 
 .slider-range__ending {
   font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
   vertical-align: middle;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $special-grey-2;
+
+    &:hover {
+      border-bottom: 1px solid $special-grey-2;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -37,6 +49,7 @@
   border-radius: 10px;
   box-shadow: 0 0 0 1px $special-grey-4;
   box-sizing: content-box;
+  margin: 0 15px;
 
   &::-webkit-slider-runnable-track {
     height: 6px;
@@ -102,6 +115,16 @@
       margin-top: -13px;
     }
 
+    &:hover::-webkit-slider-thumb {
+      box-shadow: 0 5px 3px 0 $special-grey-4,
+        0 0 0 1px $special-grey-4;
+    }
+
+    &:active::-webkit-slider-thumb {
+      box-shadow: 0 0 0 1px $basic-green,
+        0 5px 1px 0 $special-grey-4;
+    }
+
     &::-moz-range-track {
       height: 6px;
       background-color: $special-grey-4;
@@ -121,6 +144,16 @@
       box-shadow: 0 3px 3px 0 $special-grey-4,
         0 0 0 1px $special-grey-4;
       margin-top: -13px;
+    }
+
+    &:hover::-moz-range-thumb {
+      box-shadow: 0 5px 3px 0 $special-grey-4,
+        0 0 0 1px $special-grey-4;
+    }
+
+    &:active::-moz-range-thumb {
+      box-shadow: 0 0 0 1px $basic-green,
+        0 5px 1px 0 $special-grey-4;
     }
   }
 }

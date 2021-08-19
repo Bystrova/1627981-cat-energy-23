@@ -31,7 +31,7 @@
 
   &--two-line::before,
   &--two-line::after {
-    top: 25px;
+    top: 15px;
   }
 
   @media (min-width: $tablet-width) {
@@ -43,6 +43,10 @@
       display: none;
     }
 
+    &--optional {
+      margin-left: 37px;
+    }
+
     &::before {
       top: 20px;
       margin-right: 40px;
@@ -51,6 +55,12 @@
     &::after {
       top: 20px;
       margin-left: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--optional {
+      margin-left: 0;
     }
   }
 }

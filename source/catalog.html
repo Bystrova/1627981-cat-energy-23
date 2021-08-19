@@ -13,7 +13,11 @@
     <div class="page-header__wrap">
       <div class="center-container center-container--header">
         <a class="logo-pic">
-          <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+          <picture>
+            <source media="(min-width: 1260px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -237,7 +241,7 @@
     </section>
     <section class="products-optional">
       <div class="center-container">
-        <h2 class="section-heading">Дополнительные товары</h2>
+        <h2 class="section-heading section-heading--optional">Дополнительные товары</h2>
         <div class="flex-container">
           <div class="products-optional__wrap">
             <ul class="products-optional__list">
@@ -245,7 +249,7 @@
                 <h3 class="products-optional__heading">Сахарозаменитель</h3>
                 <div class="products-optional__data">
                   <span>1 упаковка (100 г)</span>
-                  <span>200 р.</span>
+                  <span class="products-optional__price">200 р.</span>
                 </div>
                 <a class="products-optional__link button" href="#">Заказать</a>
               </li>
@@ -253,7 +257,7 @@
                 <h3 class="products-optional__heading">Питьевая вода</h3>
                 <div class="products-optional__data">
                   <span>5 литров</span>
-                  <span>50 р.</span>
+                  <span class="products-optional__price">50 р.</span>
                 </div>
                 <a class="products-optional__link button" href="#">Заказать</a>
               </li>
@@ -261,7 +265,7 @@
                 <h3 class="products-optional__heading">Молоко</h3>
                 <div class="products-optional__data">
                   <span>1 литр</span>
-                  <span>100 р.</span>
+                  <span class="products-optional__price">100 р.</span>
                 </div>
                 <a class="products-optional__link button" href="#">Заказать</a>
               </li>
@@ -269,7 +273,7 @@
                 <h3 class="products-optional__heading">Витамины</h3>
                 <div class="products-optional__data">
                   <span>1 упаковка (30 г)</span>
-                  <span>300 р.</span>
+                  <span class="products-optional__price">300 р.</span>
                 </div>
                 <a class="products-optional__link button" href="#">Заказать</a>
               </li>
@@ -284,11 +288,11 @@
     <section class="contacts contacts--background">
       <div class="center-container center-container--relative">
         <div class="contacts__wrap ">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="contacts__address">
             ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург
+            <span class="contacts__line-space">Санкт-Петербург</span>
           </address>
         </div>
       </div>

@@ -13,7 +13,11 @@
     <div class="page-header__wrap">
       <div class="center-container center-container--header">
         <a class="logo-pic" href="index.html">
-          <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+          <picture>
+            <source media="(min-width: 1260px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -154,7 +158,7 @@
         <div class="center-container">
           <div class="form__send">
             <button class="form__send-button button" type="submit">Отправить заявку</button>
-            <small>* — Обязательные поля</small>
+            <span class="form__footnote">* — Обязательные поля</span>
           </div>
         </div>
       </div>
@@ -162,11 +166,11 @@
     <section class="contacts contacts--background">
       <div class="center-container center-container--relative">
         <div class="contacts__wrap ">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="contacts__address">
             ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург
+            <span class="contacts__line-space">Санкт-Петербург</span>
           </address>
         </div>
       </div>

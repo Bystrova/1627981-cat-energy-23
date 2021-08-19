@@ -2,12 +2,18 @@
   color: $special-dark-grey;
 
   &:not(:last-child) {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     &:not(:last-child) {
-      margin-bottom: 27px;
+      margin-bottom: 23px;
     }
   }
 }
@@ -56,4 +62,14 @@
     top: 5px;
     left: -54px;
   }
+}
+
+.radio__input:checked + .radio__label::before {
+  border: 1px solid $special-grey-6;
+}
+
+.radio__input:disabled + .radio__label::before,
+.radio__input:disabled + .radio__label::after,
+.radio__input:disabled + .radio__label {
+  opacity: 0.3;
 }
