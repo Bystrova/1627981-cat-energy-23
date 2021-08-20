@@ -31,7 +31,7 @@
   // margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,10 +70,10 @@
 }
 
 .form__fieldset-comment {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,7 +135,7 @@
 }
 
 .form__animal-data-item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
@@ -147,7 +147,9 @@
 }
 
 .form__input {
-  padding: 13px 15px;
+  // padding: 13px 15px;
+  height: 45px;
+  padding: 0 15px;
   border: 1px solid $special-border-grey-2;
   width: 100%;
 
@@ -166,11 +168,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 18px 15px 15px;
+    // padding: 18px 15px 15px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 18px 15px;
+    // padding: 18px 15px;
+    height: 56px;
   }
 }
 
@@ -194,7 +198,7 @@
 .form__user-comment::placeholder {
   font-family: $Oswald;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basic-dark-grey;
   opacity: 1;
@@ -206,11 +210,11 @@
 }
 
 .form__user-comment::placeholder {
-  padding-top: 7px;
+  // padding-top: 7px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 7px 15px;
+    // padding: 7px 15px;
     text-align: left;
   }
 }
@@ -258,10 +262,12 @@
   border: 1px solid $special-border-grey-2;
   min-height: 150px;
   margin: 36px 0 0 0;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     margin: 74px 0 0 0;
     min-height: 175px;
+    padding-left: 17px;
   }
 }
 

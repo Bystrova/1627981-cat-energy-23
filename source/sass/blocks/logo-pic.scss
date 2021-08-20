@@ -1,5 +1,4 @@
 .logo-pic {
-  margin-bottom: 12px;
   display: block;
 
   &:hover {
@@ -12,5 +11,16 @@
 
   @media (max-width: $mobile-width-only) {
     margin-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
