@@ -1,0 +1,9 @@
+.flex-container {
+  padding-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+    padding: 0;
+  }
+}

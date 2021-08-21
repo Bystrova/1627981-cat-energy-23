@@ -1,7 +1,9 @@
 .process {
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-border-grey;
-    padding-bottom: 47px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,11 +12,16 @@
 }
 
 .process__title {
-  margin: 0 0 38px 0;
-  padding: 45px 0 0 0;
+  margin: 0 0 43px 0;
+  padding: 8px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+    padding: 15px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 0 0 0;
   }
 }
 
@@ -28,7 +35,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-    row-gap: 37px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +48,7 @@
 .process__item {
   padding: 0 0 0 80px;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   min-height: 60px;
 
   &::before {
@@ -50,6 +57,7 @@
     width: 60px;
     height: 60px;
     left: 0;
+    top: -4px;
   }
 
   &--healthy::before {
@@ -80,7 +88,7 @@
     &::before {
       width: 80px;
       height: 80px;
-      top: 50px;
+      top: 40px;
     }
 
     &::after {
@@ -89,8 +97,8 @@
       width: 134px;
       height: 280px;
       position: absolute;
-      top: 10px;
-      right: 70px;
+      top: 0;
+      right: 75px;
       font-family: $Oswald;
       font-size: 280px;
       line-height: 280px;
@@ -101,5 +109,13 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+
+    &::after {
+      right: 0;
+    }
   }
+}
+
+.process__text {
+  margin: 0;
 }

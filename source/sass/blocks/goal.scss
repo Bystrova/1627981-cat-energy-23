@@ -41,20 +41,21 @@
   @media (min-width: $tablet-width) {
     padding: 77px 0 53px 53px;
     min-height: 372px;
+    margin-bottom: 30px;
 
     &--weight-loss::before {
-      width: 200px;
-      height: 200px;
-      top: 55px;
-      left: 65%;
+      width: 207px;
+      height: 207px;
+      top: 80px;
+      left: 63%;
       background-size: contain;
     }
 
     &--weight-gain::before {
       width: 268px;
       height: 200px;
-      top: 55px;
-      left: 60%;
+      top: 90px;
+      left: 58%;
       background-size: contain;
     }
   }
@@ -93,6 +94,7 @@
     padding: 0;
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 26px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,20 +104,22 @@
 }
 
 .goal__text {
-  padding: 0 0 23px 0;
+  padding: 0 0 22px 0;
   border-bottom: 1px solid $special-grey-3;
-  margin: 0 0 15px 0;
+  margin: 0 0 18px 0;
   min-height: 96px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 52%;
     border: none;
     font-size: 16px;
     line-height: 24px;
+    margin: 0 0 28px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin: 0 0 4px 0;
   }
 }
 

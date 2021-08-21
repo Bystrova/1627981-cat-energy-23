@@ -1,3 +1,4 @@
+@import "normalize.css";
 @import "variables.scss";
 @import "base.scss";
 @import "fonts.scss";
@@ -7,8 +8,10 @@
 @import "blocks/contacts.scss";
 @import "blocks/copyright.scss";
 @import "blocks/example.scss";
+@import "blocks/flex-container.scss";
 @import "blocks/form.scss";
 @import "blocks/goal.scss";
+@import "blocks/good-feature.scss";
 @import "blocks/heading-primary.scss";
 @import "blocks/logo-pic.scss";
 @import "blocks/main-nav.scss";
@@ -21,5 +24,6 @@
 @import "blocks/products-optional.scss";
 @import "blocks/products.scss";
 @import "blocks/radio.scss";
+@import "blocks/section-heading.scss";
 @import "blocks/slider-range.scss";
 @import "blocks/socials-list.scss";

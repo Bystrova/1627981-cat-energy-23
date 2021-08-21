@@ -1,20 +1,36 @@
 .page-footer {
   background-color: $basic-light;
   text-align: center;
-  // padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+  }
 }
 
 .page-footer__wrap {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .page-footer__logo-text {
   margin-top: 39px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__list {

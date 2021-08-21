@@ -1,10 +1,23 @@
 .page-header {
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to left, transparent 50%, $basic-white 50%),
-      url("../img/background/green-cat-desktop.png") right no-repeat,
-      linear-gradient(to left, $basic-dark-green 50%, transparent 50%);
-    min-height: 694px;
-    margin-bottom: 82px;
+    // margin-bottom: 11px;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      min-height: 950px;
+      background: url("../img/background/can.png") no-repeat;
+      background-size: 609px auto;
+      background-position: 120px 350px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: linear-gradient(to left, transparent 50%, $basic-white 50%),
+        url("../img/background/green-cat-desktop.png") right no-repeat,
+        linear-gradient(to left, $basic-dark-green 50%, transparent 50%);
+      min-height: 694px;
+      margin-bottom: 82px;
+    }
   }
 }
 
@@ -15,11 +28,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
+    padding: 24px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding: 53px 30px 0;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
 
@@ -36,7 +51,7 @@
   text-transform: uppercase;
   color: $basic-white;
   text-align: center;
-  margin-bottom: 320px;
+  margin: 25px 0 303px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
@@ -45,29 +60,33 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .page-header__bottom {
-
   min-height: 480px;
   background: url("../img/background/can.png") center 165px no-repeat,
     url("../img/background/green-cat.png") center top no-repeat,
     linear-gradient(to bottom, $basic-dark-green 63%, $basic-white 37%);
-  padding: 23px 0 0 0;
+  padding: 28px 0 0 0;
   margin-bottom: 22px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/background/can.png") bottom no-repeat;
+    background: none;
     text-align: left;
-    padding: 62px 0 0 0;
+    padding: 55px 0 0 87px;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../img/background/can.png") bottom no-repeat;
     background-size: contain;
+    background-position: 600px 10px;
     text-align: left;
-    padding: 111px 0 0 0;
+    padding: 110px 0 0 160px;
   }
 }
 
@@ -76,6 +95,11 @@
     min-width: 244px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 0;
+    padding: 17px 0;
+    margin-left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

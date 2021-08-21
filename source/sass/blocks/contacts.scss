@@ -2,6 +2,10 @@
   &--background {
     background-color: $basic-light;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
 }
 
 .contacts__wrap {
@@ -12,7 +16,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 41px 51px;
+    padding: 65px 41px 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,8 +24,8 @@
     width: 570px;
     background-color: $basic-white;
     top: 95px;
-    left: 20px;
-    padding: 66px 89px 51px 76px;
+    left: 30px;
+    padding: 66px 89px 45px 76px;
   }
 }
 
@@ -32,7 +36,7 @@
   text-transform: uppercase;
   color: $special-black;
   font-weight: normal;
-  padding: 0;
+  padding: 0 10px 0 0;
   margin: 0;
   width: 140px;
 
@@ -73,4 +77,8 @@
   object-fit: cover;
   width: 100%;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

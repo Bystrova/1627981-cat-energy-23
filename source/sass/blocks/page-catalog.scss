@@ -1,11 +1,19 @@
-.page-catalog__title {
-  margin: 27px 0 49px 0;
+.page-catalog {
+  border-top: 1px solid $special-grey-3;
 
   @media (min-width: $tablet-width) {
-    margin: 65px 0 82px 0;
+    border: none;
+  }
+}
+
+.page-catalog__title {
+  margin: 27px 0 41px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 55px 0 82px 0;
   }
 
-  @media (min-width: $tablet-width) {
-    margin: 79px 0;
+  @media (min-width: $desktop-width) {
+    margin: 75px 0 85px;
   }
 }
