@@ -16,7 +16,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 41px 47px;
+    padding: 65px 41px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +25,7 @@
     background-color: $basic-white;
     top: 95px;
     left: 30px;
-    padding: 66px 89px 45px 76px;
+    padding: 64px 89px 45px 76px;
   }
 }
 
@@ -74,11 +74,8 @@
 }
 
 .contacts__location {
-  object-fit: cover;
   width: 100%;
+  height: auto;
   display: block;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
+  object-fit: cover;
 }
