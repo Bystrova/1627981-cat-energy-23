@@ -15,7 +15,6 @@
     &:not(:last-child) {
       border: none;
       background: linear-gradient(to bottom, $basic-white 81px, $basic-light 81px);
-      //background-color: green;
     }
 
     &:last-child {
@@ -90,7 +89,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 0;
     width: 172px;
-    height: 196px;
+    height: 201px;
   }
 }
 
@@ -179,6 +178,10 @@
       display: block;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 159px 0 24px;
+  }
 }
 
 .product:last-child .product__heading::before,
@@ -199,7 +202,7 @@
 
   @media (min-width: $desktop-width) {
     top: -80px;
-    left: 57px;
+    left: 55px;
   }
 }
 
@@ -224,5 +227,9 @@
     br {
       display: block;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 88px 0;
   }
 }
