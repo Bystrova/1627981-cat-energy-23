@@ -2,15 +2,15 @@
   &--main {
     @media (min-width: $tablet-width) {
       min-height: 950px;
-      background: url("../img/background/can-tablet.png") no-repeat;
-      background-size: 709px auto;
-      background-position: center 340px;
+      //   background: url("../img/background/can-tablet.png") no-repeat;
+      //   background-size: 709px auto;
+      //   background-position: center 340px;
 
-      @media (min-resolution: 2dppx) {
-        background: url("../img/background/can-tablet@2x.png") no-repeat;
-        background-size: 709px auto;
-        background-position: center 340px;
-      }
+      //   @media (min-resolution: 2dppx) {
+      //     background: url("../img/background/can-tablet@2x.png") no-repeat;
+      //     background-size: 709px auto;
+      //     background-position: center 340px;
+      //   }
     }
 
     @media (min-width: $desktop-width) {
@@ -77,47 +77,40 @@
 
 .page-header__bottom {
   min-height: 480px;
-  background: url("../img/background/can.png") center 167px no-repeat,
-    url("../img/background/green-cat.png") center top no-repeat,
+  background: url("../img/background/green-cat.png") center top no-repeat,
     linear-gradient(to bottom, $basic-dark-green 63%, $basic-white 37%);
   padding: 28px 0 0 0;
   margin-bottom: 22px;
   text-align: center;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/background/can@2x.png") center 165px no-repeat,
+    background:
       url("../img/background/green-cat@2x.png") center top no-repeat,
       linear-gradient(to bottom, $basic-dark-green 63%, $basic-white 37%);
-    background-size: 280px 270px, 320px 302px, 320px 482px;
+    background-size: 320px 302px, 320px 482px;
   }
 
   @media (min-width: $tablet-width) {
     background: none;
     text-align: left;
-    padding: 60px 0 0 87px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    padding: 105px 0 0 160px;
+    padding: 0;
   }
 }
 
 .page-header__container {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    width: 552px;
-    height: 499px;
-    z-index: 2;
-    top: -80px;
-    left: 397px;
-    background: url("../img/background/can-desktop.png") bottom no-repeat;
-    background-size: contain;
+  position: relative;
 
-    @media (min-resolution: 2dppx) {
-      background: url("../img/background/can-desktop@2x.png") bottom no-repeat;
-      background-size: 552px 499px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 59px 0 0 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 106px 0 0 80px;
   }
 }
 
@@ -132,5 +125,26 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+  }
+}
+
+.page-header__img {
+  position: absolute;
+  top: 140px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    top: 261px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    z-index: 0;
+    top: 25px;
+    left: 448px;
   }
 }

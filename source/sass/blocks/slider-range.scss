@@ -5,13 +5,13 @@
   bottom: -44px;
 
   @media (min-width: $tablet-width) {
-    bottom: 3px;
-    left: 67px;
+    bottom: 5px;
+    left: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    right: -26px;
-    bottom: 71px;
+    right: -11px;
+    bottom: 72px;
   }
 }
 
@@ -88,7 +88,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 428px;
+    width: 425px;
+    height: 4px;
     appearance: none;
     background-color: inherit;
     border: none;
@@ -96,7 +97,7 @@
     margin: 0 20px;
 
     &::-webkit-slider-runnable-track {
-      height: 6px;
+      height: 4px;
       background-color: $special-grey-4;
       cursor: pointer;
       border-radius: 6px;
@@ -127,7 +128,7 @@
     }
 
     &::-moz-range-track {
-      height: 6px;
+      height: 4px;
       background-color: $special-grey-4;
       cursor: pointer;
       border-radius: 6px;
@@ -138,10 +139,10 @@
       box-sizing: content-box;
       background: $basic-green;
       cursor: pointer;
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      border: 13px solid $basic-white;
+      border: 12px solid $basic-white;
       box-shadow: 0 3px 3px 0 $special-grey-4,
         0 0 0 1px $special-grey-4;
       margin-top: -13px;

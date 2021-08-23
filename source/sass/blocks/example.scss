@@ -9,10 +9,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, $basic-white 160px, transparent 161px),
+    background: linear-gradient(to bottom, $basic-white 190px, transparent 191px),
       linear-gradient(to right, $basic-light 50%, transparent 50%),
       linear-gradient(to left, $basic-light-grey 50%, transparent 50%);
-    padding: 25px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: -30px;
+  }
+}
+
+.example__wrap {
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
   }
 }
 
@@ -199,11 +207,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: calc(100% + 55px);
-    top: -55px;
-    width: 660px;
+    height: 100%;
+    top: 0;
+    // height: calc(100% + 55px);
+    // top: -55px;
+    width: 650px;
     left: 40px;
     background: linear-gradient(to bottom, $basic-white 190px, $basic-light 191px);
+    overflow: hidden;
   }
 }
 
@@ -233,7 +244,6 @@
   @media (min-width: $desktop-width) {
     background: linear-gradient(to bottom, $basic-white 190px, $basic-light-grey 191px);
     top: 0;
-    right: -5px;
   }
 }
 
@@ -252,7 +262,7 @@
 
     @media (min-width: $desktop-width) {
       max-width: none;
-      left: -30px;
+      left: -40px;
       position: absolute;
       top: 0;
       margin: 0;
@@ -273,7 +283,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: 59px;
+      right: 54px;
       top: -1px;
       object-fit: contain;
       width: 545px;
