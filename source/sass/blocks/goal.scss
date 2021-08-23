@@ -19,11 +19,11 @@
   &--weight-loss::before {
     content: "";
     width: 50px;
-    height: 50px;
+    height: 53px;
     position: absolute;
     background: url("../img/icons/slim-cat.svg") no-repeat;
-    top: 20px;
-    left: 20px;
+    top: 23px;
+    left: 22px;
     background-size: contain;
   }
 
@@ -34,7 +34,7 @@
     position: absolute;
     background: url("../img/icons/muscle-cat.svg") no-repeat;
     top: 25px;
-    left: 15px;
+    left: 14px;
     background-size: contain;
   }
 
@@ -44,8 +44,8 @@
     margin-bottom: 30px;
 
     &--weight-loss::before {
-      width: 207px;
-      height: 207px;
+      width: 200px;
+      height: 211px;
       top: 80px;
       left: 63%;
       background-size: contain;
@@ -66,7 +66,7 @@
 
     &--weight-loss::before {
       width: 100px;
-      height: 100px;
+      height: 106px;
       top: 40px;
       left: 52px;
     }
@@ -74,8 +74,8 @@
     &--weight-gain::before {
       width: 134px;
       height: 100px;
-      top: 40px;
-      left: 42px;
+      top: 46px;
+      left: 35px;
     }
   }
 }
