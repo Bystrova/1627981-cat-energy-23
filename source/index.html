@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="favicon.ico" rel="icon">
+  <link href="img/favicons/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="img/favicons/icon180.png" rel="apple-touch-icon">
+  <link href="/manifest.webmanifest" rel="manifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -14,9 +18,9 @@
       <div class="center-container center-container--header">
         <a class="logo-pic">
           <picture>
-            <source media="(min-width: 1260px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="52">
-            <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+            <source media="(min-width: 1260px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="logo-pic__img" src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
           </picture>
         </a>
       </div>
@@ -38,11 +42,21 @@
       </nav>
     </div>
     <div class="page-header__bottom">
-      <div class="center-container center-container--header-bottom">
-        <h1 class="page-header__title heading-primary heading-primary--m-white"> Функциональное<br> питание для котов
-        </h1>
-        <p class="page-header__slogan"> Занялся собой? Займись котом! </p>
-        <a class="page-header__choose-program button button--main" href="form.html">Подобрать программу</a>
+      <div class="center-container center-container--relative">
+        <div class="page-header__container">
+          <h1 class="page-header__title heading-primary heading-primary--m-white"> Функциональное<br> питание для котов
+          </h1>
+          <p class="page-header__slogan"> Занялся собой? Займись котом! </p>
+          <a class="page-header__choose-program button button--main" href="form.html">Подобрать программу</a>
+          <picture>
+            <source media="(min-width: 1260px)"
+              srcset="img/background/can-desktop.png 1x, img/background/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/background/can-tablet.png 1x, img/background/can-tablet@2x.png 2x">
+            <img class="page-header__img" src="img/background/can.png" srcset="img/background/can@2x.png 2x" width="280"
+              height="270">
+          </picture>
+        </div>
+
       </div>
     </div>
   </header>
@@ -125,12 +139,20 @@
           <div class="example__slider">
             <ul class="example__slider-list">
               <li class="example__slider-item">
-                <img class="example__slider-img example__slider-img--before" src="img/slider/photo-before.png"
-                  width="311" height="232" alt="Кот до похудения">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/slider/photo-before-tablet.png 1x, img/slider/photo-before-tablet@2x.png 2x">
+                  <img class="example__slider-img example__slider-img--before" src="img/slider/photo-before.png"
+                    srcset="img/slider/photo-before@2x.png 2x" width="311" height="232" alt="Кот до похудения">
+                </picture>
               </li>
               <li class="example__slider-item">
-                <img class="example__slider-img example__slider-img--after" src="img/slider/photo-after.png" width="251"
-                  height="240" alt="Кот после похудения">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/slider/photo-after-tablet.png 1x, img/slider/photo-after-tablet@2x.png 2x">
+                  <img class="example__slider-img example__slider-img--after" src="img/slider/photo-after.png"
+                    srcset="img/slider/photo-after@2x.png 2x" width="251" height="240" alt="Кот после похудения">
+                </picture>
               </li>
             </ul>
             <div class="example__range slider-range">
@@ -153,7 +175,14 @@
           </address>
         </div>
       </div>
-      <img class="contacts__location" src="img/location.png" width="320" height="362" alt="Расположение на карте">
+      <picture>
+        <source media="(min-width: 1260px)"
+          srcset="img/location/location-desktop.png 1x, img/location/location-desktop@2x.png 2x">
+        <source media="(min-width: 768px)"
+          srcset="img/location/location-tablet.png 1x, img/location/location-tablet@2x.png 2x">
+        <img class="contacts__location" src="img/location/location.png" srcset="img/location/location@2x.png 2x"
+          width=" 320" height="362" alt="Расположение на карте">
+      </picture>
     </section>
   </main>
 

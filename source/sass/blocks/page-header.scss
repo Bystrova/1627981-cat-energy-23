@@ -1,14 +1,16 @@
 .page-header {
-  @media (min-width: $desktop-width) {
-    // margin-bottom: 11px;
-  }
-
   &--main {
     @media (min-width: $tablet-width) {
       min-height: 950px;
-      background: url("../img/background/can.png") no-repeat;
-      background-size: 609px auto;
-      background-position: 120px 350px;
+      //   background: url("../img/background/can-tablet.png") no-repeat;
+      //   background-size: 709px auto;
+      //   background-position: center 340px;
+
+      //   @media (min-resolution: 2dppx) {
+      //     background: url("../img/background/can-tablet@2x.png") no-repeat;
+      //     background-size: 709px auto;
+      //     background-position: center 340px;
+      //   }
     }
 
     @media (min-width: $desktop-width) {
@@ -17,6 +19,13 @@
         linear-gradient(to left, $basic-dark-green 50%, transparent 50%);
       min-height: 694px;
       margin-bottom: 82px;
+
+      @media (min-resolution: 2dppx) {
+        background: linear-gradient(to left, transparent 50%, $basic-white 50%),
+          url("../img/background/green-cat-desktop@2x.png") right no-repeat,
+          linear-gradient(to left, $basic-dark-green 50%, transparent 50%);
+        background-size: 100%, 720px auto, 100%;
+      }
     }
   }
 }
@@ -51,7 +60,7 @@
   text-transform: uppercase;
   color: $basic-white;
   text-align: center;
-  margin: 25px 0 303px;
+  margin: 25px 0 301px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
@@ -62,31 +71,46 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 51px;
+    margin-bottom: 53px;
   }
 }
 
 .page-header__bottom {
   min-height: 480px;
-  background: url("../img/background/can.png") center 165px no-repeat,
-    url("../img/background/green-cat.png") center top no-repeat,
+  background: url("../img/background/green-cat.png") center top no-repeat,
     linear-gradient(to bottom, $basic-dark-green 63%, $basic-white 37%);
   padding: 28px 0 0 0;
   margin-bottom: 22px;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../img/background/green-cat@2x.png") center top no-repeat,
+      linear-gradient(to bottom, $basic-dark-green 63%, $basic-white 37%);
+    background-size: 320px 302px, 320px 482px;
+  }
+
   @media (min-width: $tablet-width) {
     background: none;
     text-align: left;
-    padding: 55px 0 0 87px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../img/background/can.png") bottom no-repeat;
-    background-size: contain;
-    background-position: 600px 10px;
     text-align: left;
-    padding: 110px 0 0 160px;
+    padding: 0;
+  }
+}
+
+.page-header__container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 59px 0 0 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 106px 0 0 80px;
   }
 }
 
@@ -101,5 +125,26 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+  }
+}
+
+.page-header__img {
+  position: absolute;
+  top: 140px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    top: 261px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    z-index: 0;
+    top: 25px;
+    left: 448px;
   }
 }

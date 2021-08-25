@@ -2,16 +2,16 @@
   text-align: center;
   position: absolute;
   left: 45px;
-  bottom: -46px;
+  bottom: -44px;
 
   @media (min-width: $tablet-width) {
     bottom: 5px;
-    left: 70px;
+    left: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    right: -14px;
-    bottom: 71px;
+    right: -11px;
+    bottom: 72px;
   }
 }
 
@@ -21,13 +21,14 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
-  vertical-align: middle;
+  vertical-align: baseline;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $special-grey-2;
+    vertical-align: middle;
 
     &:hover {
       border-bottom: 1px solid $special-grey-2;
@@ -87,7 +88,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 428px;
+    width: 425px;
+    height: 4px;
     appearance: none;
     background-color: inherit;
     border: none;
@@ -95,7 +97,7 @@
     margin: 0 20px;
 
     &::-webkit-slider-runnable-track {
-      height: 6px;
+      height: 4px;
       background-color: $special-grey-4;
       cursor: pointer;
       border-radius: 6px;
@@ -126,7 +128,7 @@
     }
 
     &::-moz-range-track {
-      height: 6px;
+      height: 4px;
       background-color: $special-grey-4;
       cursor: pointer;
       border-radius: 6px;
@@ -137,10 +139,10 @@
       box-sizing: content-box;
       background: $basic-green;
       cursor: pointer;
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      border: 13px solid $basic-white;
+      border: 12px solid $basic-white;
       box-shadow: 0 3px 3px 0 $special-grey-4,
         0 0 0 1px $special-grey-4;
       margin-top: -13px;
