@@ -12,11 +12,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 71px 124px 69px 422px;
+    padding: 72px 124px 69px 422px;
     background: url("../img/icons/icon-gift.svg") center 59px no-repeat,
       url("../img/background/green-bag-cat-tablet.png") no-repeat,
       $basic-green;
-    background-position: 77px 60px, 0;
+    background-position: 78px 59px, 0;
     background-size: auto, cover;
 
     @media (min-resolution: 2dppx) {
@@ -24,7 +24,7 @@
         url("../img/background/green-bag-cat-tablet@2x.png") no-repeat,
         $basic-green;
       background-size: 78px auto, 707px 200px, 707px auto;
-      background-position: 77px 60px, 0;
+      background-position: 78px 59px, 0;
     }
   }
 
@@ -33,8 +33,7 @@
     background: url("../img/icons/icon-gift.svg") center 59px no-repeat,
       url("../img/background/green-bag-cat-desktop.png") no-repeat,
       $basic-green;
-    background-position: center 59px, 0;
-    // width: 19%;
+    background-position: center 58px, 0;
     width: 245px;
     margin: 78px 0 0 0;
 
@@ -43,7 +42,7 @@
         url("../img/background/green-bag-cat-desktop@2x.png") no-repeat,
         $basic-green;
       background-size: 78px auto, 245px 289px, 245px auto;
-      background-position: center 59px, 0;
+      background-position: center 58px, 0;
     }
   }
 }

@@ -62,5 +62,12 @@
     &--optional {
       margin-left: 0;
     }
+    &::before {
+      top: 22px;
+    }
+
+    &::after {
+      top: 22px;
+    }
   }
 }

@@ -31,7 +31,7 @@
   // margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,14 +58,14 @@
 }
 
 .form__fieldset-contacts {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -82,10 +82,10 @@
 }
 
 .form__fieldset-options {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,6 +110,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__animal-data-list {
@@ -126,11 +131,11 @@
 .form__animal-data-item {
   display: grid;
   grid-template-columns: min-content 1fr;
-  gap: 13px;
+  gap: 14px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    gap: 15px;
+    gap: 16px;
   }
 }
 
@@ -138,16 +143,11 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 }
 
 .form__input {
-  // padding: 13px 15px;
   height: 45px;
   padding: 0 15px;
   border: 1px solid $special-border-grey-2;
@@ -165,9 +165,19 @@
   }
 
   &:focus {
-    border: none;
+    border: 1px solid transparent;
     outline: 2px solid $basic-dark-grey;
+    outline-offset: -2px;
   }
+
+  &:focus+.form__email-icon {
+    stroke: $basic-green;
+  }
+
+  &:focus+.form__phone-icon {
+    fill: $basic-green;
+  }
+
 
   &--error {
     border: none;
@@ -175,13 +185,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    // padding: 18px 15px 15px;
+    padding: 0 19px;
     height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 18px 15px;
-    height: 56px;
+    height: 52px;
   }
 }
 
@@ -217,11 +226,9 @@
 }
 
 .form__user-comment::placeholder {
-  // padding-top: 7px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    // padding: 7px 15px;
     text-align: left;
   }
 }
@@ -230,7 +237,7 @@
   color: $basic-dark-grey;
   list-style: none;
   padding: 0;
-  margin: 32px 0 0 0;
+  margin: 33px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 74px 0 0 0;
@@ -247,9 +254,15 @@
 .form__user-contacts-item {
   display: grid;
   grid-template-columns: min-content 1fr;
-  column-gap: 13px;
+  column-gap: 10px;
   row-gap: 14px;
   align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 16px;
+
+  }
 }
 
 .form__user-contacts-item:not(:last-child) {
@@ -264,6 +277,38 @@
   }
 }
 
+.form__email-icon {
+  stroke: $special-dark-grey;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+
+  &--error {
+    stroke: $basic-red;
+  }
+
+  @media (min-width: $tablet-width) {
+     top: 17px;
+     right: 17px;
+  }
+}
+
+.form__phone-icon {
+  fill: $basic-black;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  &--error {
+    fill: $basic-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 17px;
+  }
+}
+
 .form__user-comment {
   width: 100%;
   border: 1px solid $special-border-grey-2;
@@ -271,10 +316,20 @@
   margin: 36px 0 0 0;
   padding-top: 8px;
 
+  &:hover {
+    border: 1px solid $special-grey-2;
+  }
+
+  &:focus {
+    border: 1px solid transparent;
+    outline: 2px solid $basic-dark-grey;
+    outline-offset: -2px;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 74px 0 0 0;
     min-height: 175px;
-    padding-left: 17px;
+    padding: 8px 0 0 17px;
   }
 }
 
@@ -296,7 +351,7 @@
 
 .form__options-list {
   list-style: none;
-  margin: 37px 0 0 0;
+  margin: 38px 0 0 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -311,7 +366,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    margin: 60px 0 0 0;
+    margin: 61px 0 0 0;
   }
 }
 
@@ -344,11 +399,16 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 16px 0;
+    padding: 17px 0 16px;
+    min-width: none;
+    width: 282px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/3;
+    width: auto;
+    min-width: 280px;
+
   }
 }
 
