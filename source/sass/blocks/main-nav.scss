@@ -1,10 +1,13 @@
 .main-nav {
   @media (min-width: $tablet-width) {
     padding-top: 18px;
+    width: calc(100% - 60px - 174px - 32px);
+    // width: 440px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 16px;
+    width: calc(100% / 2 - 60px - 70px);
   }
 }
 
@@ -22,6 +25,7 @@
     justify-content: space-between;
     font-size: 18px;
     line-height: 24px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -166,6 +170,7 @@
   position: absolute;
   width: 100%;
   background-color: $basic-white;
+  z-index: 1;
 }
 
 .main-nav--nojs .main-nav__toggle {

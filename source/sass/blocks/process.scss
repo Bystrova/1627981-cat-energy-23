@@ -62,22 +62,18 @@
 
   &--healthy::before {
     background: url("../img/icons/leaf.svg") no-repeat;
-    // background-size: contain;
   }
 
   &--easy::before {
     background: url("../img/icons/tub.svg") no-repeat;
-    // background-size: contain;
   }
 
   &--applying::before {
     background: url("../img/icons/eat.svg") no-repeat;
-    // background-size: contain;
   }
 
   &--duration::before {
     background: url("../img/icons/alarm.svg") no-repeat;
-    // background-size: contain;
   }
 
   @media (min-width: $tablet-width) {

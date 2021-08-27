@@ -2,15 +2,6 @@
   &--main {
     @media (min-width: $tablet-width) {
       min-height: 950px;
-      //   background: url("../img/background/can-tablet.png") no-repeat;
-      //   background-size: 709px auto;
-      //   background-position: center 340px;
-
-      //   @media (min-resolution: 2dppx) {
-      //     background: url("../img/background/can-tablet@2x.png") no-repeat;
-      //     background-size: 709px auto;
-      //     background-position: center 340px;
-      //   }
     }
 
     @media (min-width: $desktop-width) {
