@@ -15,6 +15,7 @@
   padding-top: 29px;
   padding-bottom: 26px;
 
+
   @media (min-width: $tablet-width) {
     padding: 65px 41px 45px;
   }
@@ -26,6 +27,7 @@
     top: 95px;
     left: 30px;
     padding: 64px 89px 45px 76px;
+    z-index: 3;
   }
 }
 
@@ -76,6 +78,7 @@
 .contacts__location-wrap {
   width: 100%;
   height: 362px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -86,8 +89,18 @@
   display: block;
   object-fit: cover;
   width: 100%;
+  position: absolute;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.contacts__location-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   z-index: 1;
 }
