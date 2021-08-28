@@ -61,19 +61,22 @@
   }
 
   &--healthy::before {
-    background: url("../img/icons/leaf.svg") no-repeat;
+    background: url("../img/icons/leaf.svg") no-repeat, $basic-green;
   }
 
   &--easy::before {
-    background: url("../img/icons/tub.svg") no-repeat;
+    background: url("../img/icons/tub.svg") no-repeat,
+      $basic-green;
   }
 
   &--applying::before {
-    background: url("../img/icons/eat.svg") no-repeat;
+    background: url("../img/icons/eat.svg") no-repeat,
+      $basic-green;
   }
 
   &--duration::before {
-    background: url("../img/icons/alarm.svg") no-repeat;
+    background: url("../img/icons/alarm.svg") no-repeat,
+      $basic-green;
   }
 
   @media (min-width: $tablet-width) {

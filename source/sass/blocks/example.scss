@@ -51,7 +51,7 @@
     line-height: 24px;
     margin-top: 147px;
     margin-bottom: 68px;
-    padding-right: 124px;
+    padding-right: 135px;
   }
 }
 
@@ -208,7 +208,7 @@
 
   @media (min-width: $desktop-width) {
     height: 100%;
-    top: -3px;
+    top: 0;
     width: 650px;
     left: 40px;
     background: linear-gradient(to bottom, $basic-white 190px, $basic-light 191px);
@@ -262,7 +262,7 @@
       max-width: none;
       left: -40px;
       position: absolute;
-      top: 0;
+      top: -3px;
       margin: 0;
     }
   }
@@ -282,7 +282,7 @@
 
     @media (min-width: $desktop-width) {
       right: 54px;
-      top: -1px;
+      top: -2px;
       object-fit: contain;
       width: 545px;
       height: 520px;
