@@ -133,7 +133,6 @@
     &:hover::-webkit-slider-thumb {
       box-shadow: 0 5px 3px 0 $special-grey-4,
         0 0 0 1px $special-grey-4;
-
     }
 
     &:focus::-webkit-slider-thumb {
@@ -146,15 +145,12 @@
         0 5px 3px 0 $special-grey-4;
     }
 
-
-
     &::-moz-range-track {
       height: 4px;
       background-color: $special-grey-4;
       cursor: pointer;
       border-radius: 6px;
     }
-
 
     &::-moz-range-thumb {
       box-sizing: content-box;
