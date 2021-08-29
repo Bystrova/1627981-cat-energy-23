@@ -63,8 +63,16 @@
   }
 }
 
+.checkbox__input:hover + .checkbox__label::before {
+  border: 1px solid $special-grey-6;
+}
+
 .checkbox__input:disabled + .checkbox__label::before,
 .checkbox__input:disabled + .checkbox__label::after,
 .checkbox__input:disabled + .checkbox__label {
   opacity: 0.3;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  border: 1px solid $special-grey-6;
 }

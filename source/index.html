@@ -177,9 +177,10 @@
               </li>
             </ul>
             <div class="example__range slider-range">
-              <span class="slider-range__ending">было</span>
-              <input class="slider-range__control" type="range">
-              <span class="slider-range__ending">стало</span>
+              <button class="slider-range__ending" type="button">было</button>
+              <label class="visually-hidden" for="slider-range">Управление слайдером</label>
+              <input class="slider-range__control" type="range" id="slider-range">
+              <button class="slider-range__ending" type="button">стало</button>
             </div>
           </div>
         </div>
@@ -212,7 +213,7 @@
           <source media="(min-width: 768px)"
             srcset="img/location/location-tablet.png 1x, img/location/location-tablet@2x.png 2x">
           <img class="contacts__location" src="img/location/location.png" srcset="img/location/location@2x.png 2x"
-            width=" 320" height="362" alt="Расположение на карте">
+            width="320" height="362" alt="Расположение на карте">
         </picture>
       </div>
     </section>
@@ -236,7 +237,7 @@
             <a class="socials-list__link" href="#">
               <span class="visually-hidden">Инстаграм</span>
               <svg class="socials-list__icon socials-list__icon--insta" width="16" height="16">
-                <use xlink:href="img/sprite.svg#insta">
+                <use xlink:href="img/sprite.svg#insta"></use>
               </svg>
             </a></li>
           <li class="socials-list__item">

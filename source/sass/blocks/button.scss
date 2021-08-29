@@ -14,6 +14,10 @@
     background-color: $green-button-hover;
   }
 
+  &:focus {
+    outline-color: $basic-black;
+  }
+
   &:active {
     color: $opacity-white;
   }

@@ -64,7 +64,7 @@
   }
 }
 
-.radio__input:checked + .radio__label::before {
+.radio__input:hover + .radio__label::before {
   border: 1px solid $special-grey-6;
 }
 
@@ -72,4 +72,8 @@
 .radio__input:disabled + .radio__label::after,
 .radio__input:disabled + .radio__label {
   opacity: 0.3;
+}
+
+.radio__input:focus + .radio__label::before {
+  border: 1px solid $special-grey-6;
 }
