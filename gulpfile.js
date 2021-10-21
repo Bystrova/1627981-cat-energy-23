@@ -13,6 +13,7 @@ const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const concat = require("gulp-concat");
 
 // Styles
 
@@ -48,10 +49,11 @@ exports.html = html;
 //Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/app.js")
+  return gulp.src("source/js/*.js")
+    .pipe(concat("main.js"))
     .pipe(terser())
-    .pipe(rename("app.min.js"))
-    .pipe(gulp.dest("build/js"))
+    .pipe(rename("main.min.js"))
+    .pipe(gulp.dest("build/js"));
 }
 
 exports.scripts = scripts;
